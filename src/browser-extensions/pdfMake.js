@@ -21,7 +21,7 @@ var defaultClientFonts = {
 function Document(docDefinition, fonts, vfs) {
 	this.docDefinition = docDefinition;
 	this.fonts = fonts || defaultClientFonts;
-	this.vfs = vfs;
+	this.vfs = vfs || vfsDefault;
 }
 
 Document.prototype._createDoc = function(options, callback) {
